@@ -1,0 +1,1 @@
+# vk_devops_test_HELLO_WORLD
