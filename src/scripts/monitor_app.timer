@@ -1,0 +1,10 @@
+[Unit]
+Description=Run monitor_app.sh every 30 seconds
+
+[Timer]
+OnBootSec=10
+OnUnitActiveSec=30    
+Unit=monitor_app.service
+
+[Install]
+WantedBy=multi-user.target

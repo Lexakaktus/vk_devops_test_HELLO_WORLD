@@ -1,0 +1,10 @@
+[Unit]
+Description=Monitor Flask Application
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/monitor_app.sh
+# Чтобы видеть вывод в journalctl
+StandardOutput=journal
+StandardError=journal
